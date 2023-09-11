@@ -31,7 +31,7 @@ flowchart TD
     O --> Q
     Q --> R{x < raiz cuadrada de n?}
     R --> |Si|T
-    R -->|No| S(Contar las números que pudieron dividir n y los que n)
+    R -->|No| S(Contar las números que pudieron dividir n y los que no)
     S -->U{Algún número x fue divisor de n, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> Z(Fin)
@@ -107,9 +107,9 @@ flowchart TD
     Ñ -->|NO| P(No es divisor)
     P --> Q(x = x+1)
     O --> Q
-    Q --> R(x < raiz cuadrada de número inicial?)
+    Q --> R{x < raiz cuadrada de número inicial?}
     R --> |Si|T
-    R --> S(Contar = Número de veces que un número al dividir el número inicial dio residuo 0)
+    R -->|No| S(Contar las números que pudieron dividir al número inicial y los que no)
     S -->U{Alguno número x fue divisor del número inicial, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> K(No imprimir)
