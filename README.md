@@ -29,9 +29,9 @@ flowchart TD
     Ñ -->|NO| P(No es divisor)
     P --> Q(x = x+1)
     O --> Q
-    Q --> R(x < raiz cuadrada de n?)
+    Q --> R{x < raiz cuadrada de n?}
     R --> |Si|T
-    R --> S(Contar = Número de veces que un número al dividir n dio residuo 0)
+    R -->|No| S(Contar = Número de veces que un número al dividir n dio residuo 0)
     S -->U{Alguno número x fue divisor de n, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> Z(Fin)
