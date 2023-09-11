@@ -139,7 +139,7 @@ Algoritmo definir_numeros_primos
 		raiz_numero_n <- RC(numero_n)
 		cont=0
 			si numero_n = 2 Entonces
-				Escribir '2 es un primo'
+				Escribir '2 Es un primo'
 				//Incluimos 2 como primo, esto porque es divisior de todos los pares, y el solo lo puede dividir uno
 			SiNo
 				si numero_n > 2 Entonces
