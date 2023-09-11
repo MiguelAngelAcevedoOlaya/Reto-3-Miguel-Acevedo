@@ -32,7 +32,7 @@ flowchart TD
     Q --> R(x < raiz cuadrada de n?)
     R --> |Si|T
     R --> S(Contar = Número de veces que un número al dividir n dio residuo 0)
-    S -->U{Alguno número x fue divisor de n?}
+    S -->U{Alguno número x fue divisor de n, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> Z(Fin)
     U -->|No| AD(Es primo)
@@ -110,7 +110,7 @@ flowchart TD
     Q --> R(x < raiz cuadrada de número inicial?)
     R --> |Si|T
     R --> S(Contar = Número de veces que un número al dividir el número inicial dio residuo 0)
-    S -->U{Alguno número x fue divisor de número inicial?}
+    S -->U{Alguno número x fue divisor del número inicial, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> K(No imprimir)
     U -->|No| AD(Es primo)
