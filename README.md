@@ -139,7 +139,7 @@ Algoritmo definir_numeros_primos
 		raiz_numero_n <- RC(numero_n)
 		cont=0
 			si numero_n = 2 Entonces
-				Escribir '2 Si es primo'
+				Escribir '2 es un primo'
 				//Incluimos 2 como primo, esto porque es divisior de todos los pares, y el solo lo puede dividir uno
 			SiNo
 				si numero_n > 2 Entonces
@@ -152,7 +152,7 @@ Algoritmo definir_numeros_primos
 						Fin Para
 						//Usamos la raiz utilizando la formula de la Criba de Erastotenes creando un ciclo de numeros de 1 hasta la raiz del número en el que mira si es o no divisor
 						si  cont = 1 Entonces
-							Escribir numero_n ' Si es un primo'
+							Escribir numero_n ' Es un primo'
 							//Cuenta todas las veces que el numero es divisible entre un número, si es 1, si es primo
 							//SiNo
 							//Escribir numero_n ' No es un primo'
