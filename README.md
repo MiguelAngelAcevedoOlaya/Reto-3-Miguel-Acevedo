@@ -31,8 +31,8 @@ flowchart TD
     O --> Q
     Q --> R{x < raiz cuadrada de n?}
     R --> |Si|T
-    R -->|No| S(Contar = Número de veces que un número al dividir n dio residuo 0)
-    S -->U{Alguno número x fue divisor de n, sin contar uno?}
+    R -->|No| S(Contar las números que pudieron dividir n y los que n)
+    S -->U{Algpu número x fue divisor de n, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> Z(Fin)
     U -->|No| AD(Es primo)
