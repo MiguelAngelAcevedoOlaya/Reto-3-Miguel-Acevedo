@@ -32,7 +32,7 @@ flowchart TD
     Q --> R{x < raiz cuadrada de n?}
     R --> |Si|T
     R -->|No| S(Contar las números que pudieron dividir n y los que n)
-    S -->U{Algpu número x fue divisor de n, sin contar uno?}
+    S -->U{Algún número x fue divisor de n, sin contar uno?}
     U -->|Si| V(No es primo)
     V --> Z(Fin)
     U -->|No| AD(Es primo)
